@@ -19,4 +19,17 @@ public class Numbers {
 		double num3 = num + num2;
 		System.out.println("The sum of the numbers is " + num3 + ".");
 	}
+
+	public double returnSquare(double num) {
+		num = Math.pow(num, 2);
+		return num;
+	}
+
+	public double returnArea(double num, double num2) {
+		return num * num2;
+	}
+
+	public int returnRoundUp(double num) {
+		return (int)Math.ceil(num);
+	}
 }
