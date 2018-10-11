@@ -13,7 +13,7 @@ public class IsoscelesTrap {
 		leg = -999.0;
 	}
 
-	public IsoscelesTrap(double newBase, double newBase2, double newHeight, int newLeg) {
+	public IsoscelesTrap(double newBase, double newBase2, double newHeight, double newLeg) {
 		base1 = newBase;
 		base2 = newBase2;
 		height = newHeight;
