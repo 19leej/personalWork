@@ -29,7 +29,11 @@ public class BankAccount {
 	}
 
 	public void addInterest(double interest) {
-		interestRate = interestRate + (interest / 100);
+		interestRate = interestRate + interest;
+	}
+
+	public void interestCash() {
+		balance = balance * ((interestRate / 100) + 1);
 	}
 
 	public void setAccount(int number) {
@@ -62,5 +66,9 @@ public class BankAccount {
 
 	public double charge() {
 		return financeCharge;
+	}
+
+	public double interest() {
+		return interestRate;
 	}
 }
