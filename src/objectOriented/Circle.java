@@ -4,10 +4,13 @@ public class Circle {
 	private double radius;
 
 	public Circle() {
-		radius = -999.0;
+		radius = 10;
 	}
 
 	public Circle(double newRadius) {
+		if (newRadius <= 0) {
+			newRadius = 10;
+		}
 		radius = newRadius;
 	}
 
@@ -16,6 +19,9 @@ public class Circle {
 	}
 
 	public void setRadius(double newRadius) {
+		if (newRadius <= 0) {
+			newRadius = 10;
+		}
 		radius = newRadius;
 	}
 
