@@ -5,8 +5,8 @@ public class RightTri {
 	private double height;
 
 	public RightTri() {
-		base = -999.0;
-		height = -999.0;
+		base = 10;
+		height = 10;
 	}
 
 	public RightTri(double newBase, double newHeight) {
