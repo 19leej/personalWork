@@ -2,20 +2,17 @@ package loops;
 
 import java.util.Scanner;
 
-public class While1 {
+public class For4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
-		System.out.println("Which number do you want to end at?");
+		System.out.println("What is your favorite number?");
 		int number = input.nextInt();
-		int count = 0;
-		int sum = 0;
-		while (count <= number) {
-			sum += count;
-			count += 2;
+		int counter = 0;
+		for (counter = 1; counter <= number; counter = counter + 1) {
+			System.out.println(number + " Hello");
 		}
-		System.out.println("The sum is " + sum + ".");
 		input.close();
 	}
 
