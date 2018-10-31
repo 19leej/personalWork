@@ -34,5 +34,9 @@ public class Circle {
 		double area = Math.PI * radius * radius;
 		return area;
 	}
+	public double perimeter() {
+		double perimeter = Math.PI * 2 * radius;
+		return perimeter;
+	}
 
 }
