@@ -63,6 +63,21 @@ public class NestedCalculator {
 				}
 				System.out.println("The answer is " + bob.powers(number, power));
 				break;
+			case 3:
+				System.out.println("What is the number?");
+				double number4 = input.nextDouble();
+				for (int counter3 = work; work != 1; counter3 = work) {
+					if (number4 > 0) {
+						work = 1;
+					} else {
+						System.out.println("You have entered an invalid number!");
+						System.out.println("What is the number?");
+						number4 = input.nextDouble();
+						work = 0;
+					}
+				}
+				System.out.println("The answer is " + bob.root(number4));
+				break;
 			case 4:
 				System.out.println("What is the number?");
 				double number2 = input.nextDouble();
