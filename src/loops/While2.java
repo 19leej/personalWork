@@ -1,26 +1,22 @@
-package decisions;
+package loops;
 
 import java.util.Scanner;
 
-public class While4 {
+public class While2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
-		double average = 0.0;
-		double sum = 0.0;
-		double choice = 0.0;
-		int enter = 0;
+		int number = 0;
+		int choice = 0;
 		System.out.println("Please enter a number.(9999 to quit)");
-		choice = input.nextDouble();
+		choice = input.nextInt();
 		while (choice != 9999) {
-			sum += choice;
-			enter++;
+			number = choice * 2;
+			System.out.println("Your number times two is: " + number);
 			System.out.println("Please enter a number.(9999 to quit)");
-			choice = input.nextDouble();
+			choice = input.nextInt();
 		}
-		average = sum / enter;
-		System.out.println("The average is " + average + ".");
 		input.close();
 	}
 
