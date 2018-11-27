@@ -13,7 +13,7 @@ public class Arrays4 {
 		int max = 0;
 		int size = 250;
 		int[] scores = new int[size];
-		for (counter = 0; counter < size; counter++) {
+		for (counter = 0; counter < scores.length; counter++) {
 			scores[counter] = 0 + randall.nextInt(1000 - 0 + 1);
 			System.out.println(scores[counter]);
 			if (scores[counter] > max) {
