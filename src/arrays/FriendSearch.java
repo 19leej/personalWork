@@ -24,13 +24,18 @@ public class FriendSearch {
 		System.out.println("What search method do you want to use?");
 		System.out.println("1. First name\n2. Last name\n3. Age\n4. Quit");
 		int choice = input.nextInt();
+		input.nextLine();
 		for (counter = 0; counter == 0; counter = quit) {
+			System.out.println("What search method do you want to use?");
+			System.out.println("1. First name\n2. Last name\n3. Age\n4. Quit");
+			choice = input.nextInt();
+			input.nextLine();
 			switch (choice) {
 			case 1:
 				System.out.println("Please enter the first name.");
 				String firstname = input.nextLine();
 				for (counter = 0; counter < fred.length; counter++) {
-					if (firstname == fred[counter].getFirst()) {
+					if (firstname.equals(fred[counter].getFirst()) == true) {
 						System.out.println(fred[counter].getName() + ". Age " + fred[counter].getAge());
 					}
 				}
@@ -39,7 +44,7 @@ public class FriendSearch {
 				System.out.println("Please enter the last name.");
 				String lastname = input.nextLine();
 				for (counter = 0; counter < fred.length; counter++) {
-					if (lastname == fred[counter].getLast()) {
+					if (lastname.equals(fred[counter].getLast()) == true) {
 						System.out.println(fred[counter].getName() + ". Age " + fred[counter].getAge());
 					}
 				}
