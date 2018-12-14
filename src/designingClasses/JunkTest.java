@@ -21,6 +21,7 @@ public class JunkTest {
 		int two = input.nextInt();
 		System.out.println(junk.get(0).add(one, two));
 		System.out.println(junk.get(0).overwrite(15));
+		input.close();
 	}
 
 }
