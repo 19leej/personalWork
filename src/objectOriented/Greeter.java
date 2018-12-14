@@ -3,12 +3,15 @@ package objectOriented;
 public class Greeter {
 	// instance fields
 	private int age;
-
+	private String name;
+	
 	// default constructor
 	public Greeter() {
 		age = -999;
 	}
-
+	public Greeter(int newAge) {
+		age = newAge;
+	}
 	// methods
 	public void sayHello() {
 		System.out.println("Hello!");
