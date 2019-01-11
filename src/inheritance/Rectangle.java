@@ -1,16 +1,12 @@
 package inheritance;
 
-public class Rectangle extends Quadrilateral {
+public class Rectangle extends Parallelogram implements Geo {
 	public Rectangle() {
-		
+		super();
 	}
 
-	public Rectangle(double xlength, double xwidth) {
-		setS1(xlength);
-		setS2(xwidth);
+	public Rectangle(double length, double width) {
+		super(length, width, length);
 	}
 
-	public double area() {
-		return getS1() * getS2();
-	}
 }
