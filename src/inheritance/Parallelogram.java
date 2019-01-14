@@ -17,4 +17,12 @@ public class Parallelogram extends Quadrilateral {
 		return super.getS2() * height;
 	}
 
+	public String toString() {
+		return ("Parallelogram: height=" + height + super.toString());
+	}
+	
+	public boolean equals(Object otherObject) {
+		return (this.toString().equals(otherObject.toString()));
+	}
+
 }
