@@ -8,9 +8,9 @@ public class Quadrilateral {
 
 	public Quadrilateral() {
 		s1 = 5.0;
-		s2 = 6.0;
-		s3 = 7.0;
-		s4 = 8.0;
+		s2 = 5.0;
+		s3 = 5.0;
+		s4 = 5.0;
 	}
 
 	public Quadrilateral(double newS1, double newS2, double newS3, double newS4) {
